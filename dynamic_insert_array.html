@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <Title> Dynamic element insert in array </Title>
+    <script>
+        function insertEl() {
+            let data = [50,309,42,84,23,];
+            newEl =document.getElementById("newEl").value;
+            newEl = parseInt(newEl)
+            let position = document.getElementById("position").value;
+        for(let i = data.length-1;i>=0;i--)
+        {
+            if(i>=position){
+                data[i+1] = data[i];
+                if(i==position){
+                    data[i] = newEl;
+                }
+            }
+        }
+        console.warn(data)
+        }
+    </script>
+    </head>
+    <body>
+    <input type="text" id="position" placeholder="Enter position"/>
+    <input type="text" id="newEl" placeholder="Enter new element"/>
+    <button onclick="insertEl()"> Insert </button> 
+    </body>
+</html>
