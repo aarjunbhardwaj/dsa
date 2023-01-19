@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Delete Element from array </title>
+        <script>
+            let data = [45,33,98,31,43,12];
+            let position = 3;
+            for(i=position;i<data.length-1;i++){
+            data[i] = data[i+1];
+            }
+            data.length = data.length-1;
+            console.warn(data);
+        </script>
+    </head>
+</html>
