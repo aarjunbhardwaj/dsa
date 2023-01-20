@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title> Search element in array </title>
+    <script>
+        let data = [20, 40, 34, 53, 23, 84, 49];
+        let Search = 23;
+        let index = undefined;
+        for (i = 0; i < data.length - 1; i++) {
+            if (data[i] === Search) {
+                index = i;
+                break;
+            }
+        }
+        console.warn(index);
+    </script>
+</head>
+
+</html>
