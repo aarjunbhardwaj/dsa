@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Delete element from array by default function  </title>
+        <script>
+            let data = [34,23,42,45,21,44,83,49];
+            let item = 44;
+            let index = undefined;
+            for(i=0;i<data.length-1;i++)
+            {
+            if(data[i]===item)
+            {
+                index=i;
+                break;
+            }
+            }
+            data.splice(2,1)
+            console.warn(data);
+        </script>
+    </head>
+</html>
