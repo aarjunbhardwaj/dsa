@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<script>
+    function findEl() {
+        let data = [48, 55, 32, 64, 93, 53, 24, 22, 11, 14];
+        let item = document.getElementById("searchEl").value;
+        let index = undefined;
+        for (i = 0; i <= data.length - 1; i++) {
+            if (data[i] === parseInt(item)) {
+                index = i;
+                break;
+            }
+        }
+        console.warn(index);
+    }
+
+</script>
+
+<body>
+    <input type="text" id="searchEl" placeholder="Search Element" />
+    <button onclick="findEl()"> Find Element </button>
+</body>
+
+</html>
